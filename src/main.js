@@ -4,8 +4,7 @@ const app = new Koa()
 const cors = require('kcors')
 const { server } = require('config')
 
-
-
+app.use(cors())
 
 
 
