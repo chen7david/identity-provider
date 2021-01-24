@@ -1,0 +1,33 @@
+{
+  "name": "identity-provider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/main.js",
+    "dbup": "knex migrate:latest",
+    "dbdown": "knex migrate:rollback",
+    "init": "npm run dbdown && npm run dbup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen7david/identity-provider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chen7david/identity-provider/issues"
+  },
+  "homepage": "https://github.com/chen7david/identity-provider#readme",
+  "dependencies": {
+    "config": "^3.3.3",
+    "js-yaml": "^4.0.0",
+    "kcors": "^2.2.2",
+    "knex": "^0.21.16",
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0",
+    "objection": "^2.2.10",
+    "sqlite3": "^5.0.1"
+  }
+}
