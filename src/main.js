@@ -14,7 +14,6 @@ app.use(bodyparser())
 for(let key of Object.keys(router)){
     app.use(router[key].routes())
 }
-    
 
 /* SERVER */
 app.listen(server.port, () => {
